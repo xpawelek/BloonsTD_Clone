@@ -21,7 +21,7 @@ A complete tower defense game written in **Java** with **JavaFX**, inspired by t
   - Dart Tower
   - Ice Tower
   - Tack Tower
-  - Superman Tower (recently added!)
+  - Superman Tower 
     
 - **Tower logic**:
   - Projectile tracking and collisions (darts)
