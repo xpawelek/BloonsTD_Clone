@@ -207,24 +207,23 @@ public class GameLoop extends AnimationTimer {
     public void balloonsGoesThroughWave()
     {
         Iterator<Balloon> iterator = balloons.iterator();
-        while(iterator.hasNext())
-        {
+        while (iterator.hasNext()) {
             Balloon balloon = iterator.next();
-            if(checkIfBalloonReachedFinish(balloon))
-            {
+
+            if (checkIfBalloonReachedFinish(balloon)) {
                 clearBalloon(balloon);
                 AppConstans.gameState.loseLife(balloon.getBalloonLives());
                 iterator.remove();
-            }
-            if(balloonHasNoMoreLives(balloon))
-            {
+            } else if (balloonHasNoMoreLives(balloon)) {
                 clearBalloon(balloon);
                 AppConstans.gameState.addCoin();
                 iterator.remove();
+            } else {
+                modifyBalloonsPosition(balloon);
+                checkIfBalloonInRangeOfTower(balloon);
             }
-            modifyBalloonsPosition(balloon);
-            checkIfBalloonInRangeOfTower(balloon);
         }
+
 
         if(areAllBalloonsDestroyed())
         {

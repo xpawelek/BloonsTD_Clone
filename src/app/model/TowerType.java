@@ -5,7 +5,8 @@ import java.util.function.Supplier;
 public enum TowerType {
     DART(DartTower::new),
     ICE(IceTower::new),
-    TACK(TackTower::new);
+    TACK(TackTower::new),
+    SUPERHERO(SuperheroTower::new);
 
     private final Supplier<DefenceTower> constructor;
 

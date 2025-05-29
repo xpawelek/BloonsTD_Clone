@@ -10,7 +10,7 @@ import java.util.Optional;
 public class DartTower extends DefenceTower {
     private double angle = -1;
     private long lastShotTime = 0;
-    private long fire_cooldown = 600;
+    protected long fire_cooldown;
 
     public DartTower() {
         init();
@@ -26,6 +26,7 @@ public class DartTower extends DefenceTower {
         this.firstUpgradeImagePath = "/app/view/assets/images/dart_tower_first_upgrade.png";
         this.secondUpgradeImagePath = "/app/view/assets/images/dart_tower_second_upgrade.png";
         this.towerImg = new ImageView(towerImagePath);
+        this.fire_cooldown = 600;
         this.priceValue = 250;
         this.firstUpgradePrice = 150;
         this.secondUpgradePrice = 100;
