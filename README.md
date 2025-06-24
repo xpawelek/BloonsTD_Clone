@@ -43,8 +43,8 @@ A complete tower defense game written in **Java** with **JavaFX**, inspired by t
 
 ## Game Screenshots:
 
-> ![image](https://github.com/user-attachments/assets/68101d71-4d98-4fc4-8b8e-c345c154d164)
-> 
+  ![image](https://github.com/user-attachments/assets/68101d71-4d98-4fc4-8b8e-c345c154d164)
+ 
   ![image](https://github.com/user-attachments/assets/6bf71a2b-98d6-437d-b03e-64fa0208738f)
   
   ![image](https://github.com/user-attachments/assets/d7d6935c-d467-4f13-980a-ab255a655701)
